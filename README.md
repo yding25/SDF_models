@@ -3,6 +3,6 @@ A collection of SDF models for Gazebo. This repo is continually updated!
 - Utensil
 - Furniture
 
-If one wants to build the customized SDF models, he or she can refer to my another project [SDF_Generator](https://github.com/yding25/SDF_Generator).
+<img src="https://raw.githubusercontent.com/yding25/pic_share/master/utensil.jpeg" height="300" />
 
-[Summary of these models](https://docs.google.com/spreadsheets/d/1ht5n8StNM-btlK5j4MS40Kdnfwe4TuKNytjqUknxKLA/edit?usp=sharing)
+If one wants to build the customized SDF models, he or she can refer to my another project [SDF_Generator](https://github.com/yding25/SDF_Generator).
