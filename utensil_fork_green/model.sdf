@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="utensil_fork_green">
+    <static>false</static>
+    <link name="link">
+    <inertial>
+      <!-- Volume:  1.8095690000e-06 -->
+      <mass> 0.1 </mass>
+      <!-- Center of mass:  2.3183510000e-02  4.4729200000e-03  5.6142700000e-03 -->
+      <pose>  2.3183510000e-02  4.4729200000e-03  5.6142700000e-03 0 0 0 </pose>
+      <!-- Inertia matrix -->
+      <inertia>
+        <ixx>  1.6129562896e-04 </ixx>
+        <ixy>  1.6578533341e-11 </ixy>
+        <ixz>  3.3157066683e-10 </ixz>
+        <iyy>  1.6129487187e-04 </iyy>
+        <iyz> -5.8036858501e-06 </iyz>
+        <izz>  2.9862912108e-06 </izz>
+      </inertia>
+    </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://utensil_fork_green/meshes/fork.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <ambient>0.0 1.0 0.0</ambient>
+          <diffuse>0.0 1.0 0.0</diffuse>
+          <specular>0.0 1.0 0.0</specular>
+          <emissive>0 0 0 1</emissive>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+        </material>
+      </visual>
+      <collision name='collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://utensil_fork_green/meshes/fork.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
