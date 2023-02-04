@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="food_strawberry">
+  
+    <static>false</static>
+    
+    <link name="link">
+      
+      <inertial>
+        <mass> 0.1 </mass>
+        <pose> -1.4938700000e-03  1.5432680000e-02  2.1114490000e-02 0 0 0 </pose>
+        <inertia>
+          <ixx>  2.0727615080e-05 </ixx>
+          <ixy> -2.0235302249e-06 </ixy>
+          <ixz> -5.3860263914e-08 </ixz>
+          <iyy>  2.1151037241e-05 </iyy>
+          <iyz> -6.1887744607e-07 </iyz>
+          <izz>  2.0897873452e-05 </izz>
+        </inertia>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://food_strawberry/meshes/textured.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>50.0</mu>
+              <mu2>50.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+          	<ode>
+          		<min_depth>0.001</min_depth>
+          		<max_vel>0.0</max_vel>
+          	</ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://food_strawberry/meshes/textured.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 0 0</ambient>
+          <diffuse>1 0 0</diffuse>
+          <specular>1 0 0</specular>
+        </material>
+      </visual>
+
+    </link>
+  </model>
+</sdf>

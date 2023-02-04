@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="food_bread">
+  
+    <static>false</static>
+    
+    <link name="link">
+      
+      <inertial>
+        <mass> 0.1 </mass>
+        <pose> -3.5444000000e-04  2.2295190000e-02 -3.6098000000e-04 0 0 0 </pose>
+        <inertia>
+          <ixx>  7.2252732516e-05 </ixx>
+          <ixy> -1.1803620772e-06 </ixy>
+          <ixz> -1.9325442451e-06 </ixz>
+          <iyy>  1.0398456739e-04 </iyy>
+          <iyz> -6.9664432629e-07 </iyz>
+          <izz>  6.1494163913e-05 </izz>
+        </inertia>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://food_bread/meshes/textured.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>50.0</mu>
+              <mu2>50.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+          	<ode>
+          		<min_depth>0.001</min_depth>
+          		<max_vel>0.0</max_vel>
+          	</ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://food_bread/meshes/textured.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 0 0</ambient>
+          <diffuse>1 0 0</diffuse>
+          <specular>1 0 0</specular>
+        </material>
+      </visual>
+
+    </link>
+  </model>
+</sdf>

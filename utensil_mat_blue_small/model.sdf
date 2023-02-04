@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="utensil_mat_blue_small">
+  
+    <static>false</static>
+    
+    <link name="link">
+      
+      <inertial>
+        <mass> 0.1 </mass>
+        <pose>  0.0000000000e+00  0.0000000000e+00  0.0000000000e+00 0 0 0 </pose>
+        <inertia>
+          <ixx>  1.8833335081e-04 </ixx>
+          <ixy>  0.0000000000e+00 </ixy>
+          <ixz>  0.0000000000e+00 </ixz>
+          <iyy>  3.7500003513e-04 </iyy>
+          <iyz>  0.0000000000e+00 </iyz>
+          <izz>  1.8833335081e-04 </izz>
+        </inertia>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://utensil_mat_blue_small/meshes/textured.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>50.0</mu>
+              <mu2>50.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+          	<ode>
+          		<min_depth>0.001</min_depth>
+          		<max_vel>0.0</max_vel>
+          	</ode>
+          </contact>
+        </surface>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://utensil_mat_blue_small/meshes/textured.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 0 1</ambient>
+          <diffuse>0 0 1</diffuse>
+          <specular>0 0 1</specular>
+        </material>
+      </visual>
+
+    </link>
+  </model>
+</sdf>
